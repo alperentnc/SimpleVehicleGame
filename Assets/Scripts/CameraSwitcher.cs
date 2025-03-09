@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraSwitcher : MonoBehaviour
 {
@@ -6,7 +7,6 @@ public class CameraSwitcher : MonoBehaviour
     private int camNumber = 0;
     void Start()
     {
-        
     }
     void Update()
     {
@@ -21,12 +21,14 @@ public class CameraSwitcher : MonoBehaviour
         {
             mainCam.SetActive(false);
             secondCam.SetActive(true);
+            GetComponentInParent<PlayerInput>().camera = secondCam.GetComponent<Camera>();
             camNumber = 1;
         }
         else
         {
             mainCam.SetActive(true);
             secondCam.SetActive(false);
+            GetComponentInParent<PlayerInput>().camera = mainCam.GetComponent<Camera>();
             camNumber = 0;
         }
         
