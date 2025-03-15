@@ -1888,7 +1888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: d632cf6671b81f645af074b8875fe84b, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -1945,7 +1945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f95bdd7b208f64b867a64883a5e81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  move: {fileID: -1680190386980627800, guid: d632cf6671b81f645af074b8875fe84b, type: 3}
 --- !u!1001 &1434966651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2677,7 +2677,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_PlayerPrefab: {fileID: 0}
-  m_SplitScreen: 0
+  m_SplitScreen: 1
   m_MaintainAspectRatioInSplitScreen: 0
   m_FixedNumberOfSplitScreens: -1
   m_SplitScreenRect:

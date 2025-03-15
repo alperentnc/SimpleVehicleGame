@@ -18,10 +18,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         moveDirection = move.action.ReadValue<Vector2>();
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        Debug.Log(moveDirection);
+        //horizontalInput = Input.GetAxis("Horizontal");
+        //verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * Time.deltaTime * speed * moveDirection.y);
-        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * moveDirection.x);
     }
 
 }
